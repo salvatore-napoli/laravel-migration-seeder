@@ -14,7 +14,7 @@ class AddAddedColumnToStudentsTable extends Migration
     public function up()
     {
         Schema::table('students', function (Blueprint $table) {
-          $table->string('added column', 255)->after('class');
+          $table->string('added_column', 255)->after('class');
         });
     }
 
